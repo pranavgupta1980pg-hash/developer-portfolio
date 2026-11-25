@@ -3,72 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pranav Gupta - BCA (AI/DS) student at K.R. Mangalam University. Python, Linux, Git. Aspiring DevOps and Cloud Engineer.">
 <title>Pranav Gupta — Developer Portfolio</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: Arial, sans-serif; color: #2c2c2c; line-height: 1.75; max-width: 860px; margin: 48px auto; padding: 0 24px; }
-header { border-bottom: 4px solid #1F4E79; padding-bottom: 20px; margin-bottom: 36px; }
-h1 { color: #1F4E79; font-size: 2rem; margin-bottom: 6px; }
-h2 { color: #2E75B6; font-size: 1.15rem; font-weight: bold; margin: 32px 0 14px; padding-left: 12px; border-left: 5px solid #2E75B6; }
-.badge { display: inline-block; background: #1F4E79; color: #fff; padding: 4px 14px; border-radius: 16px; font-size: 0.82rem; margin: 4px 4px 4px 0; }
-.card { border: 1px solid #d0d8e4; border-radius: 8px; padding: 20px 22px; margin: 12px 0; background: #f7faff; }
-.card h3 { color: #1F4E79; margin-bottom: 8px; }
-.card p { margin-bottom: 6px; }
-table { width: 100%; border-collapse: collapse; margin: 14px 0; }
-th { background: #1F4E79; color: #fff; padding: 8px 12px; text-align: left; font-size: 0.9rem; }
-td { padding: 8px 12px; border-bottom: 1px solid #e0e8f0; font-size: 0.9rem; }
-tr:nth-child(even) td { background: #f0f5fb; }
-a { color: #2E75B6; text-decoration: none; }
-a:hover { text-decoration: underline; }
-footer { margin-top: 48px; padding-top: 18px; border-top: 1px solid #d0d8e4; text-align: center; font-size: 0.82rem; color: #888; }
+  :root {
+    --navy: #1F4E79;
+    --blue: #2E75B6;
+    --ink: #22292f;
+    --muted: #5b6875;
+    --line: #d8e2ee;
+    --wash: #f5f9fd;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 22px; }
+
+  header {
+    background: linear-gradient(135deg, var(--navy) 0%, #2b6da8 100%);
+    color: #fff;
+    padding: 46px 0 38px;
+  }
+  header h1 { font-size: 2.1rem; line-height: 1.2; margin-bottom: 8px; }
+  header p { color: #d7e6f5; font-size: 0.98rem; }
+  .badges { margin-top: 16px; }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.35);
+    padding: 4px 13px;
+    border-radius: 999px;
+    font-size: 0.79rem;
+    margin: 4px 5px 0 0;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin: 34px 0 14px;
+    padding-left: 12px;
+    border-left: 5px solid var(--blue);
+  }
+  p { margin-bottom: 10px; }
+
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    padding: 18px 20px;
+    margin: 12px 0;
+    background: var(--wash);
+  }
+  .card h3 { font-size: 1rem; color: var(--navy); margin-bottom: 6px; }
+  .card p { font-size: 0.92rem; color: var(--muted); margin-bottom: 8px; }
+  .card a { font-size: 0.9rem; font-weight: 600; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+  th { background: var(--navy); color: #fff; text-align: left; padding: 9px 12px; }
+  td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:nth-child(even) td { background: var(--wash); }
+
+  .skill { margin-bottom: 11px; }
+  .skill-top { display: flex; justify-content: space-between; font-size: 0.88rem; margin-bottom: 4px; }
+  .skill-top span:last-child { color: var(--muted); }
+  .bar { height: 9px; background: #e3ecf6; border-radius: 999px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: var(--blue); border-radius: 999px; }
+
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 44px;
+    padding: 22px 0 40px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  @media (max-width: 640px) {
+    header { padding: 34px 0 28px; }
+    header h1 { font-size: 1.55rem; }
+    h2 { font-size: 1.08rem; margin-top: 26px; }
+    .card { padding: 15px 16px; }
+    table { font-size: 0.83rem; }
+    th, td { padding: 7px 9px; }
+    .wrap { padding: 0 16px; }
+  }
 </style>
 </head>
 <body>
+
 <header>
-<h1>Hi, I am Pranav Gupta</h1>
-<p>BCA (AI/DS) Student • K.R. Mangalam University, Gurugram • Batch 2024–28</p>
-<p style="margin-top:12px">
-<span class="badge">Python</span>
-<span class="badge">Linux</span>
-<span class="badge">Git &amp; GitHub</span>
-<span class="badge">Shell Scripting</span>
-<span class="badge">REST APIs</span>
-<span class="badge">Markdown</span>
-</p>
+  <div class="wrap">
+    <h1>Hi, I am Pranav Gupta</h1>
+    <p>BCA (AI/DS) Student &middot; K.R. Mangalam University, Gurugram &middot; Batch 2026–2029 &middot; Section C</p>
+    <div class="badges">
+      <span class="badge">Python</span>
+      <span class="badge">Linux</span>
+      <span class="badge">Git &amp; GitHub</span>
+      <span class="badge">Shell Scripting</span>
+      <span class="badge">REST APIs</span>
+      <span class="badge">Track D — DevOps &amp; Cloud</span>
+    </div>
+  </div>
 </header>
-<h2>About Me</h2>
-<p>I am a BCA (AI/DS) student at K.R. Mangalam University building foundations in Python, Linux and Git. My primary technical interest is DevOps and cloud engineering, and my near-term goal is to earn the HackerRank Python (Basic) certificate and secure a summer internship in a DevOps or cloud-support role.</p>
-<h2>Featured Projects</h2>
-<div class="card">
-<h3>CSE103 Lab — GitHub Collaboration &amp; API Interaction</h3>
-<p>Lab repository covering Git workflows, Linux shell scripting, Markdown documentation, REST API interaction using curl and Postman, and debugging techniques.</p>
-<p><strong>Tech Stack:</strong> Python, Bash, Git, GitHub, curl, jq, Linux</p>
-<p><a href="https://github.com/pranavgupta1980pg-hash/cse103-lab-LAB3">View Repository on GitHub →</a></p>
-</div>
-<div class="card">
-<h3>Developer Portfolio Index</h3>
-<p>A centralised index of all my repositories, a 6-semester learning roadmap, and a coding platform progress tracker.</p>
-<p><strong>Tech Stack:</strong> Markdown, HTML, CSS, GitHub Pages</p>
-<p><a href="https://github.com/pranavgupta1980pg-hash/developer-portfolio">View Repository on GitHub →</a></p>
-</div>
-<h2>Technical Skills</h2>
-<table>
-<tr><th>Category</th><th>Technologies</th></tr>
-<tr><td>Languages</td><td>Python (Beginner), Bash / Shell Scripting</td></tr>
-<tr><td>Tools</td><td>Git, GitHub, VS Code, Linux Terminal, curl, Postman</td></tr>
-<tr><td>Concepts</td><td>File Systems, Process Management, REST APIs, Markdown</td></tr>
-<tr><td>Platforms</td><td>HackerRank, LeetCode, freeCodeCamp</td></tr>
-</table>
-<h2>Certifications &amp; Progress</h2>
-<p>HackerRank Python Basic — <a href="#">In Progress</a></p>
-<p>LeetCode: 0 Easy problems solved (in progress)</p>
-<p>freeCodeCamp: Responsive Web Design — In Progress</p>
-<h2>Learning Roadmap</h2>
-<p>I have planned a structured 6-semester roadmap covering core CS, databases, web development, and my chosen specialisation track (<strong>Track D — DevOps &amp; Cloud Engineering</strong>). Full details: <a href="https://github.com/pranavgupta1980pg-hash/developer-portfolio/blob/main/LEARNING_ROADMAP.md">View Roadmap</a></p>
-<h2>Contact</h2>
-<p>GitHub : <a href="https://github.com/pranavgupta1980pg-hash">github.com/pranavgupta1980pg-hash</a></p>
-<p>LinkedIn : <a href="https://linkedin.com/in/pranav-gupta-1a8356254">linkedin.com/in/pranav-gupta-1a8356254</a></p>
-<p>Email : pranavgupta1980pg@gmail.com</p>
-<footer>Built with HTML &amp; CSS • Hosted on GitHub Pages • Updated November 2026</footer>
+
+<main class="wrap">
+
+  <h2>About Me</h2>
+  <p>I am a BCA (Artificial Intelligence &amp; Data Science) student at K.R. Mangalam University building solid foundations in Python, Linux and Git. My specialisation track is <strong>DevOps &amp; Cloud Engineering</strong>. My near-term goal is to earn the HackerRank Python (Basic) certificate and secure a summer internship in a DevOps or cloud-support role.</p>
+
+  <h2>Featured Projects</h2>
+  <div class="card">
+    <h3>CSE103 Lab — Git, APIs &amp; Shell Scripting</h3>
+    <p>Lab repository with a standard <code>src/</code>, <code>tests/</code>, <code>docs/</code> layout. Covers Git workflows, Linux shell scripting, Markdown documentation, REST API interaction with <code>curl</code> and Postman, and debugging practice.</p>
+    <p><strong>Stack:</strong> Python, Bash, Git, GitHub, curl, jq, Linux</p>
+    <a href="https://github.com/pranavgupta1980pg-hash/cse103-lab-LAB3">View repository on GitHub →</a>
+  </div>
+  <div class="card">
+    <h3>Developer Portfolio Index</h3>
+    <p>A central index of my repositories, a six-semester learning roadmap, a coding-platform progress tracker, and this website.</p>
+    <p><strong>Stack:</strong> Markdown, HTML, CSS, GitHub Pages</p>
+    <a href="https://github.com/pranavgupta1980pg-hash/developer-portfolio">View repository on GitHub →</a>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <div class="skill">
+    <div class="skill-top"><strong>Python</strong><span>Beginner — improving</span></div>
+    <div class="bar"><i style="width:50%"></i></div>
+  </div>
+  <div class="skill">
+    <div class="skill-top"><strong>Linux / Bash</strong><span>Beginner</span></div>
+    <div class="bar"><i style="width:40%"></i></div>
+  </div>
+  <div class="skill">
+    <div class="skill-top"><strong>Git / GitHub</strong><span>Beginner — comfortable with daily workflow</span></div>
+    <div class="bar"><i style="width:50%"></i></div>
+  </div>
+  <div class="skill">
+    <div class="skill-top"><strong>HTML / CSS</strong><span>Learning</span></div>
+    <div class="bar"><i style="width:25%"></i></div>
+  </div>
+
+  <table>
+    <tr><th style="width:32%">Category</th><th>Technologies</th></tr>
+    <tr><td>Languages</td><td>Python (Beginner), Bash / Shell Scripting</td></tr>
+    <tr><td>Tools</td><td>Git, GitHub, VS Code, Linux Terminal, curl, Postman</td></tr>
+    <tr><td>Concepts</td><td>File Systems, Process Management, REST APIs, Markdown, Conventional Commits</td></tr>
+    <tr><td>Platforms</td><td>HackerRank, LeetCode, freeCodeCamp</td></tr>
+  </table>
+
+  <h2>Certifications &amp; Progress</h2>
+  <table>
+    <tr><th style="width:40%">Platform</th><th>Current status</th></tr>
+    <tr><td>HackerRank — Python (Basic)</td><td>In progress</td></tr>
+    <tr><td>LeetCode</td><td>Starting Easy problems</td></tr>
+    <tr><td>freeCodeCamp — Responsive Web Design</td><td>In progress</td></tr>
+  </table>
+  <p><a href="https://github.com/pranavgupta1980pg-hash/developer-portfolio/blob/main/PROGRESS.md">View full progress tracker →</a></p>
+
+  <h2>Learning Roadmap</h2>
+  <p>I have planned a structured six-semester roadmap covering core computer science, databases, web development and my chosen specialisation, <strong>Track D — DevOps &amp; Cloud Engineering</strong>.</p>
+  <p><a href="https://github.com/pranavgupta1980pg-hash/developer-portfolio/blob/main/LEARNING_ROADMAP.md">View the full learning roadmap →</a></p>
+
+  <h2>Presentation</h2>
+  <p>A timed five-minute presentation script for this portfolio is available here:
+    <a href="https://github.com/pranavgupta1980pg-hash/developer-portfolio/blob/main/PRESENTATION.md">PRESENTATION.md</a>.
+  </p>
+
+  <h2>Contact</h2>
+  <table>
+    <tr><th style="width:26%">Channel</th><th>Link</th></tr>
+    <tr><td>GitHub</td><td><a href="https://github.com/pranavgupta1980pg-hash">github.com/pranavgupta1980pg-hash</a></td></tr>
+    <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/pranav-gupta-1a8356254">linkedin.com/in/pranav-gupta-1a8356254</a></td></tr>
+    <tr><td>Email</td><td><a href="mailto:pranavgupta1980pg@gmail.com">pranavgupta1980pg@gmail.com</a></td></tr>
+  </table>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Pranav Gupta &middot; Roll 2601060024 &middot; BCA (AI/DS), Section C &middot; K.R. Mangalam University<br>
+    Built with HTML &amp; CSS &middot; Hosted on GitHub Pages &middot; Updated November 2026
+  </div>
+</footer>
+
 </body>
 </html>
