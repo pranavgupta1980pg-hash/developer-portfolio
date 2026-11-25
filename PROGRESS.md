@@ -6,10 +6,13 @@ Updated: 25 Nov 2026
 
 ## HackerRank
 
-- Profile URL : [ADD HACKERRANK PROFILE URL]
-- Problems solved : 0 / 3 attempted (Say Hello, Python If-Else, Arithmetic Operators) — pending manual completion
-- Skill test taken : Python (Basic) — Pending
-- Certificate : Pending | [ADD CERTIFICATE URL IF EARNED]
+- Profile URL : https://www.hackerrank.com/profile/pranavgupta1980
+- Username : pranavgupta1980
+- Profile badge : Python
+- Problems solved : Python Introduction set in progress (Say Hello World, Python If-Else, Arithmetic Operators)
+- Skill test taken : Python (Basic) — not yet taken
+- Certificate : Pending — profile shows no certificates earned yet
+- Profile completeness : 0% (personal details still to be added)
 
 ## LeetCode
 
